@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>예약 관리</title>
+    <link rel="stylesheet" type="text/css" href="reservation2.css">
+    <style>
+        .chat-log {
+           background-image: none;
+           overflow: hidden; /* 스크롤바를 숨김 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <iframe src="reservation2.html" class="reservation-frame"></iframe>
+    </div>
+
+
+    <script>
+        function redirectToReservation(time) {
+            // 채팅 창 안의 iframe에서 페이지 이동
+            var frame = document.querySelector('.reservation-frame');
+            frame.src = "reservation2.html?time=" + time;
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>예약 관리</title>  
+    <link rel="stylesheet" type="text/css" href="reservation2.css">
+    <style>
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          height: 100vh;
+      }
+
+    </style>
+  </style>
+</head>
+<body>
+    <div class="reservation-container">
+        <h1>예약 관리</h1>
+        <div class="reservation-frame">
+            <label for="name">예약자 대표 이름:</label>
+            <input type="text" id="name" placeholder="이름을 입력하세요">
+            <br>
+            <label for="guests">인원 수:</label>
+            <input type="number" id="guests" placeholder="인원 수를 입력하세요">
+            <br>
+            <label for="phone">전화번호:</label>
+            <input type="text" id="phone" placeholder="전화번호를 입력하세요">
+            <br>
+            <label for="time">예약 시간:</label>
+            <select id="time">
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+            </select>
+            <br>
+            <button onclick="confirmReservation()">확인</button>
+        </div>
+    </div>
+
+    <script>
+        function confirmReservation() {
+            var name = document.getElementById("name").value;
+            var guests = document.getElementById("guests").value;
+            var phone = document.getElementById("phone").value;
+            var time = document.getElementById("time").value;
+
+            if (name === "") {
+                alert("성함을 입력 해주세요");
+                return;
+            }
+            else if (guests === "") {
+                alert("인원수를 입력 해주세요");
+                return;
+            }
+            else if (phone === "") {
+                alert("전화번호를 입력 해주세요");
+                return;
+            }
+            
+            var message = "예약이 완료되었습니다!\n\n";
+            message += "예약자: " + name + "\n";
+            message += "인원 수: " + guests + "\n";
+            message += "전화번호: " + phone + "\n";
+            message += "예약 시간: " + time + "\n";
+            
+            alert(message);
+            
+            // 메인 페이지로 돌아가기
+            window.parent.location.href = "index.html";
+        }
+
+    </script>
+</body>
+</html>
+
+

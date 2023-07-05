@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>장바구니</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"> </script>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+        #menuList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #menuList li {
+            margin-bottom: 10px;
+        }
+        #menuList li span {
+            font-weight: bold;
+        }
+        #totalPrice {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            border-top: 2px solid black;
+            padding-top: 10px;
+        }
+        /* 주문하기 버튼 스타일 */
+        .order-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>장바구니</h1>
+        <ul id="menuList"></ul>
+        <p id="totalPrice"></p>
+        <!-- 주문하기 버튼 -->
+        <button class="order-button" onclick="placeOrder()">주문하기</button>
+        <script>
+        // window.onload = function () {
+        //     var bag = {{ customer.bag[item]|tojson }};
+        //     var numbag = {{ cust.numbag|tojson }};
+        //     var totalPrice = {{ cust.charge() }};
+        // window.onload = function () {
+        //     var bag = JSON.parse('{{ cust.item|tojson }}');
+        //     var numbag = JSON.parse('{{ cust.num_bag|tojson }}');
+        //     var total = '{{ total }}';
+       
+        // window.onload = function () {
+        var forCart = JSON.parse(localStorage.getItem("forCart"));
+        var cartData = forCart["Menu"]
+        var quantities = forCart["Num"]
+        var totalPrice = forCart["Total_price"]
+        var menuList = document.getElementById("menuList");
+        menuList.innerHTML = "";
+        for (var i = 0; i < cartData.length; i++) {
+            var item = cartData[i];
+            var quantity = quantities[i];
+
+            var listItem = document.createElement("li");
+            var itemInfo = document.createElement("span");
+            itemInfo.textContent = item + " (" + quantity + "개)";
+            listItem.appendChild(itemInfo);
+            menuList.appendChild(listItem);
+        }
+
+        var totalPriceElement = document.getElementById("totalPrice");
+        totalPriceElement.textContent = "총 가격: " + totalPrice + "원";
+    
+        // 주문하기 버튼 클릭 시 팝업창 표시
+        function placeOrder() {
+            // var totalPrice = document.getElementById("totalPrice").textContent;
+            // 팝업창 표시
+            alert("전체 " + totalPrice+ " 주문 처리 되었습니다. \n 감사합니다.");
+            window.localStorage.clear()
+            window.parent.location.href = "index.html";
+        };
+
+        </script>
+    </body>
+    </html>

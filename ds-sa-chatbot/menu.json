@@ -1,0 +1,475 @@
+{
+    "페이버릿 초이스": [
+        {
+            "name": "빅 플래터",
+            "eng_name": "Big Platter",
+            "price": "49500",
+            "rec_cat": [],
+            "text": "바삭하게 튀긴 닭날개와 새우, 아보카도, 치즈 등을 넣고 말아 튀긴 쉬림프 롤. 으깬 닭가슴살과 치즈로 채운 뒤 튀긴 할라피뇨 꼬치가 함께 나오는 플래터"
+        },
+        {
+            "name": "보더 샘플러",
+            "eng_name": "Border Sampler",
+            "price": "45500",
+            "rec_cat": ["Best"],
+            "text": "치킨 퀘사디아, 스텍 나쵸, 치킨플라우타 모둠 샘플러"
+        },
+        {
+            "name": "허니 치폴레 쉬림프",
+            "eng_name": "Honey Chipotle Shrimp",
+            "price": "28900",
+            "rec_cat": [],
+            "text": "특제 치폴레 소스를 버무린 통통한 새우와 바삭한 또띠아 칩을 곁들여 크리스피한 식감을 느낄 수 있는 새우 튀김"
+        },
+        {
+            "name": "프리타스 피쉬 & 칩스",
+            "eng_name": "Fritas Fish & Chips",
+            "price": "29500",
+            "rec_cat": [],
+            "text": "통째로 튀겨낸 틸라피아 피쉬와 크레이지 포테이토의 조합이 매력적인 핑거푸드"
+        },
+        {
+            "name": "보더윙",
+            "eng_name": "Border Wings",
+            "price": "26900",
+            "rec_cat": [],
+            "text": "바삭하게 튀겨낸 닭날개와 봉. 그리고 샐러리가 제공되는 메뉴로 랜치 드레싱과 핫소스 제공"
+        },
+        {
+            "name": "구아카몰 라이브",
+            "eng_name": "Guacamole Live",
+            "price": "24900",
+            "rec_cat": ["비건", "베지테리언", "채식"],
+            "text": "아보카도, 토마토, 할라피뇨, 실란트로, 레드어니언, 라임을 섞어 테이블에서 만들어드리는 요리"
+        },
+        {
+            "name": "엠파나다",
+            "eng_name": "Empanada",
+            "price": "21500",
+            "rec_cat": [],
+            "text": "고소한 패스트리에 퀘소를 곁들인 멕시코식 만두"
+        },
+        {
+            "name": "구아카몰 볼",
+            "eng_name": "Guacamole Bowl",
+            "price": "11900",
+            "rec_cat": ["비건", "베지테리언", "채식"],
+            "text": "신선한 야채를 넣은 아보카도 딥"
+        },
+        {
+            "name": "퀘소볼",
+            "eng_name": "Queso Bowl",
+            "price": "10500",
+            "rec_cat": [],
+            "text": "프리미엄 치즈로 직접 끓인 치즈 딥"
+        },
+        {
+            "name": "그릴드 멕시칸 콘",
+            "eng_name": "Grilled Mexican Corn",
+            "price": "7000",
+            "rec_cat": [],
+            "text": "특별한 시즈닝을 더한 구운 옥수수(2ea)"
+        }
+    ],
+    "샐러드": [
+        {
+            "name": "시즐링 화이타 샐러드",
+            "eng_name": "Sizzling Fajita Salad",
+            "price": "33500",
+            "rec_cat": ["샐러드", "Best"],
+            "text": "메스퀴드 그릴에 구운 치킨, 스테이크 또는 쉬림프를 곁들인 샐러드"
+        },
+        {
+            "name": "타코 샐러드",
+            "eng_name": "Taco Salad",
+            "price": "32500",
+            "rec_cat": ["샐러드"],
+            "text": "블랙빈&콘렐리쉬, 피코데가요, 믹스 치즈, 사워크림, 구아카몰 등으로 또띠아쉘을 채운 샐러드"
+        },
+        {
+            "name": "콥 샐러드",
+            "eng_name": "Cobb Salad",
+            "price": "27500",
+            "rec_cat": ["샐러드"],
+            "text": "토마토, 아보카도, 치즈, 달걀, 블랙빈&콘렐리쉬, 베이컨이 들어간 샐러드"
+        },
+        {
+            "name": "하우스 샐러드",
+            "eng_name": "House Salad",
+            "price": "11500",
+            "rec_cat": ["비건", "베지테리언", "채식", "샐러드"],
+            "text": "치즈, 토마토, 신선한 야채 샐러드"
+        }
+    ],
+    "라이스 & 수프": [
+        {
+            "name": "보더볼",
+            "eng_name": "Border Bowl",
+            "price": "27200",
+            "rec_cat": [],
+            "text": "실란트로 라임 라이스 위에 블랙빈, 슈레드 레터스, 샐러드 믹스, 피코데가요, 믹스 치즈를 올리고 화이타 베지터블과 구아카몰을 매콤한 소스와 함께 곁들인 부리또볼"
+        },
+        {
+            "name": "비프 타코 라이스",
+            "eng_name": "Beef Taco Rice",
+            "price": "25500",
+            "rec_cat": ["라이스"],
+            "text": "멕시칸 라이스, 퀘소, 레터스를 또띠아쉘에 담고 타코 미트, 블랙빈&콘렐리쉬, 할라피뇨, 구아카몰, 사워크림을 올려 매콤한 소스와 함께 곁들인 요리"
+        },
+        {
+            "name": "쉬림프 & 소시지 포솔레",
+            "eng_name": "Shrimp & Sausage Pozole",
+            "price": "11900",
+            "rec_cat": [],
+            "text": "치킨 베이스에 감자, 당근, 양파, 토마토, 멕시칸 라이스와 쉬림프, 스모크소시지를 넣고 끓여낸 멕시코식 수프"
+        },
+        {
+            "name": "치킨 또띠아 수프",
+            "eng_name": "Chicken Tortilla Soup",
+            "price": "10500",
+            "rec_cat": ["수프"],
+            "text": "치즈, 치킨믹스, 멕시칸 라이스를 넣은 멕시코식 전통 수프"
+        }
+    ],
+    "화이타 & 스테이크": [
+        {
+            "name": "립아이 스테이크 & 쉬림프",
+            "eng_name": "Ribeye Steak & Shrimps",
+            "price": "79500",
+            "rec_cat": ["스테이크", "Best"],
+            "text": "화이타 베지터블, 메쉬드포테이토, 브로콜리와 함께 제공되는 메스퀴드 그릴에 구운 립아이 스테이크와 쉬림프"
+        },
+        {
+            "name": "메가 쉬림프 화이타",
+            "eng_name": "Mega Shrimp Fajita",
+            "price": "68900",
+            "rec_cat": ["화이타"],
+            "text": "파릴라 버터에 쉬림프 20마리와 각종 야채를 구워낸 화이타"
+        },
+        {
+            "name": "콰트로 화이타",
+            "eng_name": "Quattro Fajita",
+            "price": "64900",
+            "rec_cat": ["화이타"],
+            "text": "스테이크, 치킨, 쉬림프, 풀드포크와 그릴드콘까지 풍성한 구성에 실란트로 라임 라이스가 함께 나오는 메뉴"
+        },
+        {
+            "name": "텍사스 바비큐 폭립",
+            "eng_name": "Texas BBQ Pork Rib",
+            "price": "55500",
+            "rec_cat": [],
+            "text": "BBQ소스에 마리네이드한 폭립 스테이크와 감자를 곁들인 메뉴"
+        },
+        {
+            "name": "얼티밋 화이타",
+            "eng_name": "The Ultimate Fajita",
+            "price": "54900",
+            "rec_cat": ["화이타", "Best"],
+            "text": "스테이크, 치킨, 쉬림프 모둠 화이타 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "치폴레 화이타치킨 싸이",
+            "eng_name": "Chipotle Fajitachicken Thigh",
+            "price": "52500",
+            "rec_cat": ["화이타"],
+            "text": "BBQ 소스에 마리네이드한 쫄깃한 닭다리살을 그릴드 콘과 함께 구워낸 화이타 (치폴레 소스 별도 제공)"
+        },
+        {
+            "name": "몬트레이 랜치 치킨 화이타",
+            "eng_name": "Monterey Ranch Chicken Fajita",
+            "price": "49900",
+            "rec_cat": ["화이타"],
+            "text": "베이컨, 잭 치즈, 랜치 드레싱을 곁들인 닭가슴살 화이타 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "메스퀴드 그릴 화이타",
+            "eng_name": "Mesquitegrilled Fajita",
+            "price": "47200",
+            "rec_cat": ["화이타"],
+            "text": "스테이크 또는 치킨을 선택하는 화이타(멕시칸 라이스&빈)"
+        }
+    ],
+    "퀘사디아 & 랜칠라다": [
+        {
+            "name": "랜칠라다",
+            "eng_name": "Ranchiladas",
+            "price": "53900",
+            "rec_cat": ["Best"],
+            "text": "치즈와 양파로 속은 채워 롤링한 엔칠라다와 멕시코식 토마토 소스를 곁들인 스테이크 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "더블 스텍 클럽 퀘사디아",
+            "eng_name": "Double Stacked Club Quesadillas",
+            "price": "39500",
+            "rec_cat": ["퀘사디아", "Best"],
+            "text": "화이타 치킨, 치즈, 베이컨, 아보카도, 그린페퍼와 어니언을 두 겹으로 쌓아올린 퀘사디아"
+        },
+        {
+            "name": "화이타 퀘사디아",
+            "eng_name": "Fajita Quesadillas",
+            "price": "35900",
+            "rec_cat": ["퀘사디아"],
+            "text": "그릴에 구운 스테이크 또는 치킨, 어니언과 치즈를 넣은 퀘사디아"
+        },
+        {
+            "name": "폴드포크 퀘사디아",
+            "eng_name": "Pulled Pork Quesadillas",
+            "price": "30200",
+            "rec_cat": ["퀘사디아"],
+            "text": "부드러운 식감의 풀드포크 고기에 어니언, 치즈를 넣고 치폴레 소스를 곁들여 먹는 퀘사디아"
+        }
+    ],
+    "타코 & 부리또 & 콤보": [
+        {
+            "name": "카르네 아사다 스테이크 타코",
+            "eng_name": "Carne Asada Steak Taco",
+            "price": "35200",
+            "rec_cat": ["타코"],
+            "text": "잘 구워진 안창살 스테이크와 바삭한 양파튀김, 중독성있는 할라피뇨 렌치 소스와 치즈가 어루어진 타코"
+        },
+        {
+            "name": "허니 치폴레 쉬림프 타코",
+            "eng_name": "Honey Chipotle Shrimp Taco",
+            "price": "33200",
+            "rec_cat": ["타코"],
+            "text": "중독성있는 맵고 달달한 맛이 은은하게 퍼진다! 또띠아 스트립과 통통한 새우살, 구아카몰의 환상적인 조화"
+        },
+        {
+            "name": "사우스 웨스트 치킨 타코",
+            "eng_name": "South West Chicken Taco",
+            "price": "33200",
+            "rec_cat": ["타코"],
+            "text": "그릴에 잘 구워진 화이타 치킨과 바삭한 양파튀김 중독성 있는 할라피뇨 랜치 소스와 치즈가 어우러진 타코"
+        },
+        {
+            "name": "폴드포크 타코",
+            "eng_name": "Pulled Pork Taco",
+            "price": "29200",
+            "rec_cat": ["타코"],
+            "text": "부드러운 식감의 풀드포크와 특별한 레시피로 만든 피코데가요를 얹어 만든 타코"
+        },
+        {
+            "name": "쓰리 소스 화이타 부리또",
+            "eng_name": "Three Sauce Fajita Burrito",
+            "price": "35900",
+            "rec_cat": ["부리또"],
+            "text": "그릴에 구운 스테이크 또는 치킨으로 속을 채워 3가지 소스 (란체로, 사워크림, 퀘소)를 곁들인 부리또(멕시칸 라이스&빈)"
+        },
+        {
+            "name": "치미창가",
+            "eng_name": "Chimichanga",
+            "price": "33200",
+            "rec_cat": [],
+            "text": "다진 소고기 또는 스파이시 치킨이 들어간 부리또를 튀겨내어 토마토 소스를 곁들인 메뉴 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "클래식 부리또",
+            "eng_name": "Classic Burrito",
+            "price": "33200",
+            "rec_cat": ["비건", "베지테리언", "채식","부리또"],
+            "text": "다진 소고기 또는 스파이시 치킨에 칠리콘까르네 소스 또는 사워크림소스와 치즈를 곁들인 부리또 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "델리오",
+            "eng_name": "Del Rio",
+            "price": "35900",
+            "rec_cat": [],
+            "text": "치미추리 쉬림프 타코, 엔칠라다 비프, 엠파나다 치킨 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "엘파소",
+            "eng_name": "El Paso",
+            "price": "35900",
+            "rec_cat": [],
+            "text": "사우스웨스트 치킨 타코, 엔칠라다 치즈&어니언, 엠파나다 비프 (멕시칸 라이스&빈)"
+        },
+        {
+            "name": "슈페리어",
+            "eng_name": "Superior",
+            "price": "36900",
+            "rec_cat": [],
+            "text": "크리스피 비프 타코, 엔칠라다 치킨, 엔칠라다 치즈&어니언, 치킨 플라우타 (멕시칸 라이스&빈)"
+        }
+    ],
+    "세트 & 키즈": [
+        {
+            "name": "토마토 함박 스테이크 & 필라프",
+            "eng_name": "Tomato Hamburg Steak & Pilaff",
+            "price": "12900",
+            "rec_cat": ["스테이크", "키즈", "어린이"],
+            "text": ""
+        },
+        {
+            "name": "키즈 퀘사디아",
+            "eng_name": "Kids Quesadillas",
+            "price": "11900",
+            "rec_cat": ["퀘사디아", "키즈", "어린이"],
+            "text": ""
+        },
+        {
+            "name": "치킨 텐더",
+            "eng_name": "Chicken Tender",
+            "price": "11900",
+            "rec_cat": ["키즈", "어린이"],
+            "text": ""
+        },
+        {
+            "name": "토마토 스파게티",
+            "eng_name": "Tomato Spaghetti",
+            "price": "11900",
+            "rec_cat": ["키즈", "어린이"],
+            "text": ""
+        },
+        {
+            "name": "비어버켓 피쉬 & 칩스 세트",
+            "eng_name": "Beer Bucket Fish & Chips Set",
+            "price": "82200",
+            "rec_cat": ["5", "6"],
+            "text": "프리타스 피쉬&칩스, 타코샐러드(치킨), 비어버켓(6병)"
+        },
+        {
+            "name": "비어버켓 빅플래터 세트",
+            "eng_name": "Beer Bucket Big Platter Set",
+            "price": "81700",
+            "rec_cat": ["5", "6"],
+            "text": "빅플래터, 구아카몰볼, 비어버켓(6병)"
+        },
+        {
+            "name": "D 패밀리 세트",
+            "eng_name": "D Family SET",
+            "price": "189900",
+            "rec_cat": ["가족", "3", "4"],
+            "text": "텍사스 BBQ 폭립, 메스퀴드 그릴 화이타(스테이크&치킨) , 타코샐러드(비프), 코로나리타 4잔"
+        },
+        {
+            "name": "C 패밀리 세트",
+            "eng_name": "C Family SET",
+            "price": "167500",
+            "rec_cat": ["가족", "3", "4"],
+            "text": "보더샘플러, 얼티밋 화이타, 타코샐러드(비프), 코로나리타 3잔"
+        },
+        {
+            "name": "B 커플 세트",
+            "eng_name": "B Couple SET",
+            "price": "105900",
+            "rec_cat": ["커플", "2"],
+            "text": "얼티밋 화이타, 콥 샐러드(치킨), 코로나리타 2잔"
+        },
+        {
+            "name": "A 커플 세트",
+            "eng_name": "A Couple SET",
+            "price": "101600",
+            "rec_cat": ["커플", "2"],
+            "text": "더블 스텍 클럽 퀘사디아, 시즐링 화이타 샐러드(스테이크), 코로나리타 2잔"
+        }
+    ],
+    "버거 & 디저트": [
+        {
+            "name": "트리플 머시룸 버거",
+            "eng_name": "Truffle Mushroom Burger",
+            "price": "18900",
+            "rec_cat": ["버거"],
+            "text": "풍미 가득한 트러플 오일을 뿌린 후 머쉬룸, 카라멜 어니언, 할라피뇨, 계란, 랠리쉬 소스를 곁들인 버거 & 프렌치 프라이 or 샐러드"
+        },
+        {
+            "name": "OTB 구아카몰 버거",
+            "eng_name": "OTB   OTB Guacamole Burger",
+            "price": "17900",
+            "rec_cat": ["버거"],
+            "text": "멕시코 스타일 홈메이드 실란트로 페스토와 구아카몰, 치즈, 할라피뇨, 살사 치폴레 소스를 곁들인 버거 & 프렌치 프라이 or 샐러드"
+        },
+        {
+            "name": "OTB 블랑코 퀘소 버거",
+            "eng_name": "OTB    OTB Blanco Queso Burger",
+            "price": "17900",
+            "rec_cat": ["버거"],
+            "text": "온더보더 대표 퀘소 딥 소스를 곁들여 진한 풍미를 느낄 수 있는 버거로 도톰한 패티와 카라멜 어니언, 할라피뇨가 들어간 버거 & 프렌치 프라이 or 샐러드"
+        },
+        {
+            "name": "스리라차 치킨 버거",
+            "eng_name": "Sriracha Chicken Burger",
+            "price": "16900",
+            "rec_cat": ["버거"],
+            "text": "부드러운 치킨 패티 위에 치즈, 햄, 야채, 토마토, 스리라차 소스를 곁들인 버거 & 프렌치 프라이 or 샐러드"
+        },
+        {
+            "name": "프레즐 치즈케이크",
+            "eng_name": "Pretzel Cheesecake",
+            "price": "9900",
+            "rec_cat": ["디저트"],
+            "text": "진하고 부드러운 뉴욕 크림치즈케이크"
+        },
+        {
+            "name": "보더 브라우니 썬데",
+            "eng_name": "BORDER BROWNIE SUNDAE",
+            "price": "15900",
+            "rec_cat": ["디저트"],
+            "text": "달콤한 브라우니 위에 바닐라 아이스크림을 얹고, 카라멜 시럽과 초코 시럽을 뿌린 디저트"
+        },
+        {
+            "name": "츄러스 & 아이스크림",
+            "eng_name": "Churros & Ice cream",
+            "price": "13900",
+            "rec_cat": ["디저트"],
+            "text": "달달한 바닐라 아이스크림에 츄러스를 꽂고 초코 시럽을 뿌린 디저트"
+        },
+        {
+            "name": "쏘빠삐야",
+            "eng_name": "Sopapilla",
+            "price": "13900",
+            "rec_cat": ["디저트"],
+            "text": "바삭하게 튀긴 또띠아에 시나몬 가루를 뿌리고 초코 시럽, 꿀을 찍어 먹는 디저트"
+        },
+        {
+            "name": "아이스크림",
+            "eng_name": "Ice Cream",
+            "price": "10500",
+            "rec_cat": ["디저트"],
+            "text": "바닐라 아이스크림에 초코, 카라멜 시럽을 뿌린 아이스크림"
+        }
+    ],
+    "드링크": [
+        {
+            "name": "마가리타",
+            "eng_name": "MAGARITAS",
+            "price": "13900",
+            "rec_cat": ["드링크","음료수"],
+            "text": "마가리타는 골드락/보더리타 그랑데/오티비 하우스/푸룻이 준비되어 있습니다."
+        },
+        {
+            "name": "스페셜리타",
+            "eng_name": "SPECIALRITAS",
+            "price": "17900",
+            "rec_cat": ["드링크","음료수", "Best"],
+            "text": "스페셜리타는 코로나리타/버니니리타/스미노프 애플리타/베리망고씨/OTB 모히또/트로피칼 타워가 준비되어 있습니다."
+        },
+        {
+            "name": "데킬라",
+            "eng_name": "TEQUILA",
+            "price": "8599",
+            "rec_cat": ["드링크","음료수"],
+            "text": "데킬라는 아네호/레포사도/골드/실버가 준비되어 있습니다."
+        },
+        {
+            "name": "맥주",
+            "eng_name": "CERVEZAS",
+            "price": "5900",
+            "rec_cat": ["드링크","음료수"],
+            "text": "맥주는 생맥주/멕시코맥주/크래프트맥주가 준비되어 있습니다."
+        },
+        {
+            "name": "와인",
+            "eng_name": "VINO",
+            "price": "19800",
+            "rec_cat": ["드링크","음료수"],
+            "text": "와인은 레드와인/화이트와인이 준비되어 있습니다."
+        },
+        {
+            "name": "무알콜 드링크",
+            "eng_name": "NONALCOHOLIC",
+            "price": "4000",
+            "rec_cat": ["드링크","음료수"],
+            "text": "무알콜 드링크로는 논알콜푸룻마가리타/프레쉬에이드/하리토스/페리에/소프트드링크/커피/홍차가 준비되어있습니다."
+        }
+    ]
+}

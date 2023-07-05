@@ -1,0 +1,85 @@
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  text-align: center;
+  padding: 3px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.chat-container {
+  width: 400px;
+  margin: 0 auto;
+  height: 682px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-log {
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-image: url("https://cdn.freebiesupply.com/logos/large/2x/on-the-border-logo-png-transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: ivory;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.bot-message {
+  background-color: green;
+  color: yellow;
+  font-size: 20px;
+}
+
+.user-message {
+  background-color: blue;
+  color: yellow;
+  text-align: right;
+  font-size: 20px;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+}
+
+button[type="button"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2016/07/Roasted-Chickpeas-and-Cauliflower-Tacos-H1.jpg?w=600&ssl=1"), url("https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2019/06/Grilled-Mexican-Street-Corn-L3.jpg?w=600&ssl=1");
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-size: 36% 100%, 36% 100%;
+}

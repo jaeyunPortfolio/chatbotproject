@@ -1,0 +1,43 @@
+.reservation-frame {
+  font-size: 15px; /* 원하는 글자 크기로 조정 */
+  height: 500px; /* 원하는 세로 크기로 조정 */
+  /* 추가적인 스타일 지정 가능 */
+  margin: 0 auto; /* 가운데 정렬 */
+  border: none;
+  font-size: 15px; /* 원하는 글자 크기로 조정하세요 */
+}
+
+.reservation-frame input[type="text"],
+.reservation-frame input[type="number"],
+.reservation-frame select {
+  width: 150px; /* 원하는 입력 칸 너비로 조정 */
+  padding: 5px; /* 입력 칸 내부 여백 조정 */
+}
+
+.reservation-frame button {
+  width: 120px; /* 원하는 버튼 너비로 조정 */
+  height: 40px; /* 원하는 버튼 높이로 조정 */
+  background-color: #007bff; /* 원하는 배경색으로 조정 */
+  color: #fff; /* 원하는 텍스트 색상으로 조정 */
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.reservation-frame button:hover {
+  background-color: #0056b3; /* 호버 상태에서의 배경색으로 조정 */
+}
+
+.reservation-frame label,
+.reservation-frame input,
+.reservation-frame select {
+    display: block;
+    margin-bottom: 5px; /* 요소들 사이 간격 조정 */
+}
+
+.reservation-frame button {
+    margin-top: 20px; /* 버튼과 상단 간격 조정 */
+}
+
+.reservation-container {
+  overflow: hidden; /* 스크롤바를 숨김 */
+}

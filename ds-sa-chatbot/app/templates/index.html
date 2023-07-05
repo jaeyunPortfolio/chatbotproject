@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>온더보더</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-log">
+            <div class="chat-message">
+                <div class="bot-message">
+                    안녕하세요! 온더보더입니다.
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="bot-message">
+                    원하시는 서비스를 선택해주세요!
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="handleButtonClick('예약 관리')">예약 관리</div>
+                <div class="button" onclick="handleButtonClick('메뉴 안내')">메뉴 안내</div>
+                <div class="button" onclick="handleButtonClick('추천 메뉴 제안')">추천 메뉴 제안</div>
+                <div class="button" onclick="handleButtonClick('프로모션')">프로모션</div>
+                <div class="button" onclick="handleButtonClick('매장 정보')">매장 정보</div>
+                <div class="button" onclick="handleButtonClick('문의 및 고객 지원')">문의 및 고객 지원</div>
+                <div class="button" onclick="handleButtonClick('주문')">주문</div>
+            </div>
+        </div>
+        <!--수정중-->
+        <form method="get">
+            <div class="chat-input">
+                <input name="input" type="text" placeholder="메시지를 입력하세요"> 
+                <button type="button">전송</button>
+            </div>
+        </form>
+        <!-- 수정중 -->
+        
+    </div>
+    
+    <script>
+        function handleButtonClick(buttonName) {
+            if (buttonName === '예약 관리') {
+                loadReservation();
+            } else if (buttonName === '메뉴 안내') {
+                loadMenuInfo();
+            } else if (buttonName === '추천 메뉴 제안') {
+                loadMenuRecommend();
+            } else if (buttonName === '프로모션') {
+                loadPromotion();
+            } else if (buttonName === '매장 정보') {
+                loadStoreInfo();
+            } else if (buttonName === '문의 및 고객 지원') {
+                loadCustomerService();
+            } else if (buttonName === '주문') {
+                loadOrder();
+            }
+        }
+
+        function loadReservation() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "reservation.html", true);
+            xhr.send();
+        }
+
+        function loadMenuInfo() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "menuinfo.html", true);
+            xhr.send();
+        }
+
+        function loadMenuRecommend() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "menurecommend.html", true);
+            xhr.send();
+        }
+
+        function loadPromotion() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "promotion.html", true);
+            xhr.send();
+        }
+
+        function loadStoreInfo() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "storeinfo.html", true);
+            xhr.send();
+        }
+            
+        function loadCustomerService() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "customerservice.html", true);
+            xhr.send();
+        }
+
+        function loadOrder() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "order.html", true);
+            xhr.send();
+        }
+
+        function sendMessage() {
+        var input = document.querySelector(".chat-input input");
+        var message = input.value.trim();
+        if (message !== "") {
+            var chatLog = document.querySelector(".chat-log");
+            var userMessage = document.createElement("div");
+            userMessage.className = "chat-message";
+            var userBubble = document.createElement("div");
+            userBubble.className = "user-message";
+            userBubble.textContent = message;
+            userMessage.appendChild(userBubble);
+            chatLog.appendChild(userMessage);
+            input.value = "";
+        }
+        }
+
+        var sendButton = document.querySelector(".chat-input button");
+        sendButton.addEventListener("click", sendMessage);
+
+        var inputBox = document.querySelector(".chat-input input");
+        inputBox.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
+
+    </script>
+</body>
+</html>

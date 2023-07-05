@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>온더보더</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"> </script>
+    <style>
+        .cart-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-log" id="chat-log">
+            <div class="chat-message">
+                <div class="bot-message">
+                    안녕하세요! 온더보더입니다.
+                </div>
+            </div>
+            <div class="chat-message">
+                <div class="bot-message">
+                    원하시는 서비스를 선택해주세요!
+                </div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="handleButtonClick('예약 관리')">예약 관리</div>
+                <div class="button" onclick="handleButtonClick('메뉴 안내')">메뉴 안내</div>
+                <div class="button" onclick="handleButtonClick('추천 메뉴 제안')">추천 메뉴 제안</div>
+                <div class="button" onclick="handleButtonClick('프로모션')">프로모션</div>
+                <div class="button" onclick="handleButtonClick('매장 정보')">매장 정보</div>
+                <div class="button" onclick="handleButtonClick('문의 및 고객 지원')">문의 및 고객 지원</div>
+                <div class="button" onclick="handleButtonClick('주문')">주문</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="메시지를 입력하세요">
+            <button type="button">전송</button>
+        </div>
+    </div>
+    <div class="cart-button" onclick="handleCartButtonClick()">장바구니</div>
+
+    <script>
+        var isCartOpen = false;
+        function handleButtonClick(buttonName) {
+            if (buttonName === '예약 관리') {
+                loadReservation();
+            } else if (buttonName === '메뉴 안내') {
+                loadMenuInfo();
+            } else if (buttonName === '추천 메뉴 제안') {
+                loadMenuRecommend();
+            } else if (buttonName === '프로모션') {
+                loadPromotion();
+            } else if (buttonName === '매장 정보') {
+                loadStoreInfo();
+            } else if (buttonName === '문의 및 고객 지원') {
+                loadCustomerService();
+            } else if (buttonName === '주문') {
+                loadOrder();
+            } else if (buttonName === '장바구니') {
+                if (isCartOpen) {
+                    // 장바구니 페이지가 이미 열려있으면 홈으로 돌아가기
+                    window.location.href = 'index.html';
+                } else {
+                    loadCart();
+                }
+            }
+        }
+
+        function loadReservation() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "reservation.html", true);
+            xhr.send();
+        }
+
+        function loadMenuInfo() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "menuinfo.html", true);
+            xhr.send();
+        }
+
+        function loadMenuRecommend() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "menurecommend.html", true);
+            xhr.send();
+        }
+
+        function loadPromotion() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "promotion.html", true);
+            xhr.send();
+        }
+
+        function loadStoreInfo() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "storeinfo.html", true);
+            xhr.send();
+        }
+
+        function loadCustomerService() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "customerservice.html", true);
+            xhr.send();
+        }
+
+        function loadOrder() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    chatLog.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open("GET", "order.html", true);
+            xhr.send();
+        }
+
+        function loadCart() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var chatLog = document.querySelector(".chat-log");
+                    // chatLog.innerHTML = xhr.responseText;
+                    $(chatLog).html(xhr.responseText)
+                    isCartOpen = true; // 장바구니 페이지 열림 플래그 설정'
+                }
+            };
+            xhr.open("GET", "cart.html", true);
+            xhr.send();
+        }
+
+        function handleCartButtonClick() {
+            if (isCartOpen) {
+                // 장바구니 페이지가 이미 열려있으면 홈으로 돌아가기
+                window.location.href = 'index.html';
+            } else {
+                loadCart();
+            }
+        }
+
+        function sendMessage() {
+            var input = document.querySelector(".chat-input input");
+            var message = input.value.trim();
+            if (message !== "") {
+                var chatLog = document.querySelector(".chat-log");
+                var userMessage = document.createElement("div");
+                userMessage.className = "chat-message";
+                var userBubble = document.createElement("div");
+                userBubble.className = "user-message";
+                userBubble.textContent = message;
+                userMessage.appendChild(userBubble);
+                chatLog.appendChild(userMessage);
+                input.value = "";
+                $.ajax({
+                            type : 'POST',                                 
+                            url : 'https://7e32-121-188-216-172.ngrok-free.app', // ngrok 서버를 사용할 때 마다 재설정 해야한다.
+                            data : {
+                                    message:message                       
+                            },
+                            dataType : 'text',
+                            success : function(respon){
+                                var res_list = $.parseJSON(respon)
+                                console.log(res_list)
+                                var AnswerCode = res_list['AnswerCode']
+                                console.log(AnswerCode)
+                                var botMessage = document.createElement("div");
+                                var botBubble = document.createElement("div");
+                                var forCart = { //localStorage를 사용하기 위해 저장
+                                    "Menu":res_list['Menu'],
+                                    "Num":res_list["Num"],
+                                    "Total_price":res_list["Total_price"]
+                                };
+                                localStorage.setItem("forCart", JSON.stringify(forCart));
+                                
+                                if (AnswerCode == null){ //답변 코드 없을 시
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+	                                $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0); //자동 스크롤
+
+                                } else if (AnswerCode == 1) { //예약
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+
+                                } else if (AnswerCode == 11){ //불완전한 예약
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+
+
+                                } else if (AnswerCode == 2){ //최종 주문
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.innerHTML = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+                                    window.localStorage.clear()
+                                    // loadCart();
+
+                                } else if (AnswerCode == 21){ //주문 관련
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+
+                                } else if (AnswerCode == 22){ //주문 관련
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+
+
+                                } else if (AnswerCode == 3){ //메뉴 관련
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.innerHTML = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+
+
+                                } else if (AnswerCode == 31){ //전체 메뉴판
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.innerHTML = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+                                    //json 출력
+
+                                } else if (AnswerCode == 4){ //메뉴 및 매장 안내
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+                                    //json 출력
+
+                                } else if (AnswerCode == 5){ //이벤트 정보
+                                    var Answer = res_list['Answer']
+                                    console.log(Answer)
+                                    botMessage.className = "chat-message";
+                                    botBubble.className = "bot-message";
+                                    botBubble.textContent = Answer
+                                    botMessage.appendChild(botBubble);
+                                    chatLog.appendChild(botMessage);
+                                    $('#chat-log').animate({scrollTop: $('#chat-log').get(0).scrollHeight}, 0);
+                                    loadPromotion();
+                                }
+                            }
+                    });
+            }
+        }
+
+
+        var sendButton = document.querySelector(".chat-input button");
+        sendButton.addEventListener("click", sendMessage);
+
+        var inputBox = document.querySelector(".chat-input input");
+        inputBox.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
+
+    </script>
+</body>
+</html>
